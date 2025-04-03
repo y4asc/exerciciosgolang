@@ -1,14 +1,15 @@
 package main
 
-import "fmt"
+import "fmt"                                                      
 
 func main(){
-    var ages = [5]int{17,16,20,40,50}
-    fmt.Println(ages)
-    // slice
-    var score= []int{2,3,4,5,6}
-    fmt.Println(score)
-    fmt.Println(score, len(score), cap(score))
-    score = append(score,1,7,8)
-    fmt.Println(score, len(score), cap(score))
-    }
+
+    var nomes = []string{"yasmim", "leandro", "junia", "arthur", "ane"}
+    fmt.Println(nomes)
+     nomesOne := nomes [:2]
+     fmt.Println(nomesOne)
+     nomesTwo := nomes[3:]
+     fmt.Println(nomesTwo)
+     rangeOne := nomes[2]
+     fmt.Println(rangeOne)
+}                                                                                                                                                                                                                                                                                    

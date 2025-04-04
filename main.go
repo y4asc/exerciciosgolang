@@ -1,5 +1,6 @@
 package main
 
+<<<<<<< HEAD
 import (
 	"fmt"
 	"sort"
@@ -64,3 +65,18 @@ for i:=0; i < len(superherois); i++{
 fmt.Println("o numero do herói", i, "e o herói", superherois[i])
 }
 }
+=======
+import "fmt"                                                      
+
+func main(){
+
+    var nomes = []string{"yasmim", "leandro", "junia", "arthur", "ane"}
+    fmt.Println(nomes)
+     nomesOne := nomes [:2]
+     fmt.Println(nomesOne)
+     nomesTwo := nomes[3:]
+     fmt.Println(nomesTwo)
+     rangeOne := nomes[2]
+     fmt.Println(rangeOne)
+}                                                                                                                                                                                                                                                                                    
+>>>>>>> b6f418b4f42e0c98ff128d40e99855809c734f5a

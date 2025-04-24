@@ -1,13 +1,25 @@
-  package main
+package main
 
-  import "fmt"
+import (
+  "fmt"
+)
+func analisarNotas(nota1, nota2 float64) (float64, string) {
+media := ( nota1 + nota2)/2
+var resultado string
 
-  func pegarNome()(string, string){
-return "Barry", "Aallen"
-  }
+    if media >= 6 {
+        resultado = "Aprovado"
+    } else {
+        resultado = "Reprovado"
+    }
+
+    return media, resultado
+
+}
+
+func main() {
+  media, resultado := analisarNotas(8.5, 9.8)
+  fmt.Println("Média:", media)
+  fmt.Println("Resultado:", resultado)
+}
   
-  func main(){
-nome, sobrenome := pegarNome()
-fmt.Println(nome)
-fmt.Println(sobrenome)
-  }
